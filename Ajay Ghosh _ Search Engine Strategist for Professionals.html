@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ajay Ghosh | Search Engine Strategist for Professionals</title>
+<meta name="description" content="Ajay Ghosh helps doctors, engineers, advocates and professionals get found on Google and AI search. Local SEO, Google Business Profile, AEO and content in Bangla and English.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F5F9;--card:#fff;--ink:#12203A;--mute:#52607A;--line:#D5DCE8;--accent:#0B7A85;--accent-ink:#fff;--hl:#F4B400;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1626;--card:#16213A;--ink:#EAF0FA;--mute:#9FB0CC;--line:#2A3858;--accent:#3FC1CD;--accent-ink:#06222A}}
+:root[data-theme="dark"]{--bg:#0E1626;--card:#16213A;--ink:#EAF0FA;--mute:#9FB0CC;--line:#2A3858;--accent:#3FC1CD;--accent-ink:#06222A}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque","Hind Siliguri",system-ui,sans-serif;line-height:1.6;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--hl);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-weight:800;font-size:1.15rem;text-decoration:none}
+nav a{margin-left:20px;text-decoration:none;color:var(--mute);font-size:.95rem}
+nav a:hover{color:var(--ink)}
+.hero{padding:36px 0 64px;display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
+h1{font-size:clamp(2.1rem,5.2vw,3.5rem);line-height:1.08;font-weight:800;margin:0 0 18px;letter-spacing:-.02em}
+.lead{color:var(--mute);max-width:46ch;margin:0 0 26px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--line);margin-left:10px}
+.serp{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 12px 34px rgba(18,32,58,.12)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chip{font:inherit;font-size:.88rem;padding:6px 13px;border-radius:99px;border:1px solid var(--line);background:transparent;color:var(--mute);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.q{border:1px solid var(--line);border-radius:99px;padding:10px 16px;font-size:.95rem;margin-bottom:14px;display:flex;justify-content:space-between;gap:10px}
+.q span:last-child{color:var(--accent)}
+.ai{border-left:4px solid var(--accent);padding:4px 0 4px 14px;margin-bottom:14px}
+.ai small,.res small{color:var(--mute)}
+.res{padding-top:12px;border-top:1px solid var(--line)}
+.res b{color:var(--accent);display:block;font-size:1.05rem;font-weight:600}
+.stars{color:var(--hl);letter-spacing:2px}
+section{padding:60px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.6rem,3.4vw,2.2rem);line-height:1.15;margin:0 0 10px;letter-spacing:-.01em}
+.sub{color:var(--mute);margin:0 0 30px;max-width:56ch}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{margin:0 0 6px;font-size:1.1rem}
+.card p{margin:0;color:var(--mute);font-size:.97rem}
+.who{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.who div{padding:16px;border-left:4px solid var(--hl);background:var(--card);border-radius:0 12px 12px 0}
+.who b{display:block}
+.who span{color:var(--mute);font-size:.92rem}
+.who svg{width:46px;height:46px;margin-bottom:8px;display:block;fill:none;stroke:var(--accent);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.art{width:100%;height:auto;display:block;border-radius:14px;border:1px solid var(--line)}
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.steps li{counter-increment:s;padding-top:14px;border-top:3px solid var(--accent)}
+.steps li::before{content:"Step " counter(s);color:var(--accent);font-weight:600;display:block;font-size:.9rem}
+.steps b{display:block;margin:2px 0 4px}
+.steps span{color:var(--mute);font-size:.95rem}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:40px}
+.about p{margin:0 0 14px;color:var(--mute)}
+.bn{font-family:"Hind Siliguri",sans-serif;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;align-self:start}
+.cta{text-align:center;background:var(--ink);color:var(--bg);border-radius:20px;padding:54px 22px;margin:20px 0 50px}
+.cta h2{margin-bottom:10px}
+.cta p{margin:0 auto 24px;max-width:48ch;opacity:.85}
+.cta .btn{background:var(--hl);border-color:var(--hl);color:#12203A}
+.cta .btn.alt{background:transparent;color:var(--bg);border-color:var(--bg)}
+.soc{margin-top:26px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.soc a{color:var(--bg);border:1px solid var(--bg);border-radius:99px;padding:6px 15px;font-size:.9rem;text-decoration:none;opacity:.9;transition:background .2s,color .2s,transform .2s}.soc a:hover{background:var(--bg);color:var(--ink);transform:translateY(-2px)}
+footer{padding:0 0 40px;color:var(--mute);font-size:.9rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(11,122,133,.55)}100%{box-shadow:0 0 0 18px rgba(11,122,133,0)}}
+@keyframes ring2{0%{box-shadow:0 0 0 0 rgba(244,180,0,.65)}100%{box-shadow:0 0 0 14px rgba(244,180,0,0)}}
+@keyframes ping{0%{transform:scale(1);opacity:.7}100%{transform:scale(4);opacity:0}}
+.hero h1,.hero .lead,.hero .btn,.me{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.me{animation-delay:.05s}.hero h1{animation-delay:.15s}.hero .lead{animation-delay:.3s}.hero .btn{animation-delay:.45s}
+.serp{animation:rise .9s .3s both,float 6s 1.2s ease-in-out infinite}
+.pulse{transform-box:fill-box;transform-origin:center;animation:ping 2s ease-out infinite}
+.me{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.me small{color:var(--mute)}
+.av{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--hl));display:grid;place-items:center;font-weight:800;font-size:1.5rem;color:#12203A;animation:ring 2.4s infinite;overflow:hidden;flex:none}
+.av img{width:100%;height:100%;object-fit:cover}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .5s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none;transition-delay:var(--d,0s)}
+.pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+.pk{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 26px;display:flex;flex-direction:column;position:relative}
+.pk.top{border:2px solid var(--accent)}
+.pk.rv.in:hover{transform:translateY(-6px)}
+.pk h3{margin:0 0 4px;font-size:1.25rem}
+.pk .for{color:var(--mute);font-size:.93rem;margin:0 0 18px}
+.pr{font-size:2.4rem;font-weight:800;letter-spacing:-.02em;line-height:1}
+.pr small{font-size:.95rem;font-weight:400;color:var(--mute);letter-spacing:0}
+.pk ul{list-style:none;padding:0;margin:22px 0 26px;flex:1}
+.pk li{padding-left:26px;position:relative;margin-bottom:10px;font-size:.96rem}
+.pk li::before{content:"";position:absolute;left:0;top:.42em;width:13px;height:7px;border-left:2.5px solid var(--accent);border-bottom:2.5px solid var(--accent);transform:rotate(-45deg)}
+.pk .btn{text-align:center;margin:0}
+.badge{position:absolute;top:-14px;right:20px;background:var(--hl);color:#12203A;font-weight:700;font-size:.82rem;padding:4px 14px;border-radius:99px;animation:ring2 2s infinite}
+@media (max-width:900px){.pkgs{grid-template-columns:1fr;max-width:460px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.rv{opacity:1;transform:none;transition:none}}
+.crumb{color:var(--accent);text-decoration:none;font-weight:600;display:inline-block;margin-top:10px}
+.two{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:start}
+.tick{list-style:none;padding:0;margin:12px 0 0}.tick li{padding-left:26px;position:relative;margin-bottom:12px}.tick li::before{content:"";position:absolute;left:0;top:.42em;width:13px;height:7px;border-left:2.5px solid var(--accent);border-bottom:2.5px solid var(--accent);transform:rotate(-45deg)}
+.plinks{display:flex;flex-wrap:wrap;gap:10px}.plinks a{padding:9px 16px;border:1px solid var(--line);border-radius:99px;background:var(--card);text-decoration:none;font-size:.95rem;transition:transform .2s,border-color .2s,color .2s}.plinks a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}summary{cursor:pointer;font-weight:600}details p{margin:10px 0 0;color:var(--mute)}
+.pg>*{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}.pg>*:nth-child(2){animation-delay:.07s}.pg>*:nth-child(3){animation-delay:.14s}.pg>*:nth-child(4){animation-delay:.21s}.pg>*:nth-child(n+5){animation-delay:.28s}
+@media (max-width:820px){.two{grid-template-columns:1fr}}
+@media (max-width:820px){.hero,.about{grid-template-columns:1fr}.grid,.who,.steps{grid-template-columns:1fr 1fr}nav{display:none}}
+@media (max-width:520px){.grid,.who,.steps{grid-template-columns:1fr}.btn.alt{margin:10px 0 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ajay Ghosh","jobTitle":"Search Engine Strategist","email":"ajayghoshmitu@gmail.com","description":"Local SEO, AEO and AI search optimization for doctors, engineers, advocates and professionals.","sameAs":["https://web.facebook.com/ghosh.ajay.1","https://www.instagram.com/theajayghosh/","https://www.pinterest.com/theajayghosh/","https://ajayghoshdigitalscape.blogspot.com/","https://www.fiverr.com/ajayghoshmg","https://www.upwork.com/freelancers/~014e7cb3547e6131ca"]}</script>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="#top">Ajay Ghosh</a>
+  <nav aria-label="Main"><a href="#services">Services</a><a href="#pages">All services</a><a href="#packages">Packages</a><a href="#clients">Who I help</a><a href="#process">Process</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div>
+    <div class="me"><div class="av" aria-label="Ajay Ghosh">AG</div><div><b>Ajay Ghosh</b><br><small>Search Engine Strategist</small></div></div>
+    <h1>When your clients search, you should be the answer.</h1>
+    <p class="lead">I’m Ajay Ghosh, a search engine strategist. I help doctors, engineers, advocates and other professionals get found on Google, Maps and AI search, locally and globally.</p>
+    <a class="btn" href="#contact" data-wa>Get a free search audit</a><a class="btn alt" href="#services">See services</a>
+  </div>
+  <div class="serp" aria-live="polite">
+    <div class="chips" role="group" aria-label="Choose a profession">
+      <button class="chip" aria-pressed="true" data-i="0">Doctors</button>
+      <button class="chip" aria-pressed="false" data-i="1">Engineers</button>
+      <button class="chip" aria-pressed="false" data-i="2">Advocates</button>
+      <button class="chip" aria-pressed="false" data-i="3">Consultants</button>
+    </div>
+    <div class="q"><span id="qt"></span><span>Search</span></div>
+    <div class="ai"><small>AI answer</small><div id="at"></div></div>
+    <div class="res"><b id="rt"></b><span class="stars">★★★★★</span> <small id="rs"></small></div>
+  </div>
+</div>
+
+<section id="services">
+  <h2>What I do</h2>
+  <p class="sub">Every service has one goal: more of the right people finding you, trusting you and contacting you.</p>
+  <div class="grid">
+    <div class="card"><h3>Local SEO</h3><p>Rank in your area for “near me” searches and the services people actually look for.</p></div>
+    <div class="card"><h3>Google Business Profile</h3><p>Setup, optimization, weekly posts and review management so your profile works like a front door.</p></div>
+    <div class="card"><h3>AEO and AI search</h3><p>Content structured so Google AI, ChatGPT and other answer engines can quote and recommend you.</p></div>
+    <div class="card"><h3>SEO content</h3><p>Blog posts, FAQs, meta tags and image SEO, written in Bangla and English.</p></div>
+    <div class="card"><h3>Website SEO</h3><p>Technical fixes, page structure and WordPress optimization that search engines can read.</p></div>
+    <div class="card"><h3>Reputation and social</h3><p>Review collection, online reputation and social posts that bring in enquiries.</p></div>
+  </div>
+</section>
+
+<section id="pages">
+  <h2>Service pages</h2>
+  <p class="sub">Open any service to see what I do, what you get and common questions.</p>
+  <div class="plinks" id="plinks"></div>
+</section>
+
+<section id="packages">
+  <h2>Service packages</h2>
+  <p class="sub">Monthly plans for professionals. Pick the one that fits where your business is today.</p>
+  <div class="pkgs">
+    <div class="pk"><h3>Local Starter</h3><p class="for">For a single clinic, chamber or office that needs to show up on Maps.</p>
+      <div class="pr">৳<span class="num" data-n="7500">7,500</span> <small>/ month</small></div>
+      <ul><li>Google Business Profile setup and optimization</li><li>Local keyword research (10 keywords)</li><li>8 GBP posts every month</li><li>Review collection link and QR setup</li><li>Monthly performance report</li></ul>
+      <a class="btn alt" href="#contact" data-wa>Choose Starter</a></div>
+    <div class="pk top"><span class="badge">Most popular</span><h3>Growth</h3><p class="for">For professionals who want more website traffic and more enquiries.</p>
+      <div class="pr">৳<span class="num" data-n="15000">15,000</span> <small>/ month</small></div>
+      <ul><li>Everything in Local Starter</li><li>On-page SEO for up to 10 pages</li><li>4 SEO and AEO blog posts with FAQs and meta tags</li><li>Image SEO and 16 GBP posts</li><li>Local citations and directory listings</li><li>Monthly report with strategy call</li></ul>
+      <a class="btn" href="#contact" data-wa>Choose Growth</a></div>
+    <div class="pk"><h3>Authority</h3><p class="for">For established practices and firms that want to lead their market.</p>
+      <div class="pr">৳<span class="num" data-n="30000">30,000</span> <small>/ month</small></div>
+      <ul><li>Everything in Growth</li><li>Full technical SEO audit and fixes</li><li>8 articles in Bangla or English</li><li>AEO and AI search optimization with schema</li><li>Reputation management and review replies</li><li>Competitor tracking, weekly report and priority WhatsApp support</li></ul>
+      <a class="btn alt" href="#contact" data-wa>Choose Authority</a></div>
+  </div>
+  <p class="sub" style="margin:24px 0 0">Prices are in BDT per month. Global clients get USD pricing on request. A free search audit comes before any plan.</p>
+</section>
+
+<section id="clients">
+  <h2>Who I help</h2>
+  <p class="sub">Professionals win on trust. I make sure that trust is visible the moment someone searches.</p>
+  <div class="who">
+    <div><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="6" width="36" height="36" rx="9"/><path d="M24 14v20M14 24h20"/></svg><b>Doctors and clinics</b><span>More appointment calls from patients nearby.</span></div>
+    <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 40h36M10 40V18l10-6v28M20 40V10l18 8v22M26 22h6M26 30h6"/></svg><b>Engineers and firms</b><span>Be found for projects, consulting and tenders.</span></div>
+    <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8v32M14 40h20M10 14h28M10 14l-5 12h10zM38 14l-5 12h10z"/></svg><b>Advocates</b><span>Show up for case types and practice areas in your city.</span></div>
+    <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40h32M12 40V28M22 40V18M32 40V24M12 20l10-8 10 6 8-8"/></svg><b>Other professionals</b><span>Agencies, consultants and local businesses.</span></div>
+  </div>
+</section>
+
+<section id="process">
+  <h2>How we work together</h2>
+  <p class="sub">A clear sequence, so you always know what happens next.</p>
+  <ol class="steps">
+    <li><b>Audit</b><span>I check your profile, website and competitors.</span></li>
+    <li><b>Strategy</b><span>You get a plan with priorities and keywords.</span></li>
+    <li><b>Execution</b><span>I optimize, publish and manage the work.</span></li>
+    <li><b>Report</b><span>You see calls, clicks and rankings each month.</span></li>
+  </ol>
+</section>
+
+<section id="about" class="about">
+  <div>
+    <h2>About Ajay</h2>
+    <p>I work with professionals across Bangladesh and with clients abroad. My focus is Local SEO, AEO and AI search optimization for people whose reputation is their business.</p>
+    <p>I write and deliver in both Bangla and English, so your message reaches local patients and clients as clearly as international ones.</p>
+    <p>Recent work includes an orthopedic surgeon, an ENT clinic, an e-waste recycling company and a personal branding agency.</p>
+  </div>
+  <div style="display:grid;gap:18px;align-self:start"><svg class="art" viewBox="0 0 360 220" role="img" aria-label="Map showing a business ranked first in local search"><rect width="360" height="220" fill="var(--card)"/><g stroke="var(--line)" stroke-width="10" fill="none"><path d="M0 150h360M0 60h360M90 0v220M250 0v220"/><path d="M0 210L360 20" stroke-width="6"/></g><circle cx="60" cy="100" r="9" fill="var(--mute)" opacity=".5"/><circle cx="305" cy="170" r="9" fill="var(--mute)" opacity=".5"/><circle cx="300" cy="45" r="9" fill="var(--mute)" opacity=".5"/><path d="M170 130c-26-28-34-40-34-56a34 34 0 0168 0c0 16-8 28-34 56z" fill="var(--accent)"/><circle class="pulse" cx="170" cy="130" r="8" fill="var(--accent)"/><circle cx="170" cy="74" r="13" fill="var(--card)"/><rect x="196" y="22" width="130" height="34" rx="17" fill="var(--hl)"/><text x="261" y="44" text-anchor="middle" font-size="15" font-weight="700" fill="#12203A" font-family="Bricolage Grotesque,sans-serif">Ranked #1 nearby</text></svg><div class="bn">
+    <b>বাংলা ও ইংরেজি, দুই ভাষায় কাজ</b>
+    <p lang="bn" style="margin:8px 0 0">আপনার সার্ভিস যেন Google, Maps আর AI সার্চে সবার আগে আসে, সেটাই আমার কাজ। লোকাল ও গ্লোবাল, দুই ধরনের ক্লায়েন্টের সাথেই আমি কাজ করি।</p>
+  </div></div>
+</section>
+
+<div class="cta" id="contact">
+  <h2>Ready to be found?</h2>
+  <p>Tell me about your profession and location. I’ll send a free search audit showing where you stand today.</p>
+  <a class="btn" href="#contact" data-wa>Message on WhatsApp</a><a class="btn alt" href="#contact" data-em>Send an email</a><div class="soc"><a href="https://web.facebook.com/ghosh.ajay.1" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/theajayghosh/" target="_blank" rel="noopener">Instagram</a><a href="https://www.pinterest.com/theajayghosh/" target="_blank" rel="noopener">Pinterest</a><a href="https://ajayghoshdigitalscape.blogspot.com/" target="_blank" rel="noopener">Blog</a><a href="https://www.fiverr.com/ajayghoshmg" target="_blank" rel="noopener">Fiverr</a><a href="https://www.upwork.com/freelancers/~014e7cb3547e6131ca" target="_blank" rel="noopener">Upwork</a></div>
+</div>
+</main>
+<main id="svc" hidden></main>
+
+<footer><span>© 2026 Ajay Ghosh</span><span>#AjayGhosh</span></footer>
+</div>
+
+<script>
+var WHATSAPP = "message/BSNL5UP4Y2RLA1";
+var EMAIL = "ajayghoshmitu@gmail.com";
+var D = [
+ ["best orthopedic surgeon near me","Dr. Rahman is a trusted orthopedic surgeon nearby, known for knee and spine care. Rated 4.9 by 200+ patients.","Dr. Rahman, Orthopedic Surgeon","4.9 · Open today"],
+ ["structural engineering consultant in Dhaka","ABC Engineering offers structural design and site supervision for residential and commercial projects.","ABC Engineering Consultants","4.8 · Free consultation"],
+ ["property dispute lawyer near me","Adv. Karim handles property and family cases and offers first-meeting guidance.","Adv. Karim and Associates","4.9 · Book a meeting"],
+ ["digital marketing consultant Bangladesh","A local consultant with proven Google Business Profile and SEO results for professionals.","Your Business Name","5.0 · Call now"]
+];
+function show(i){
+  document.getElementById("qt").textContent=D[i][0];
+  document.getElementById("at").textContent=D[i][1];
+  document.getElementById("rt").textContent=D[i][2];
+  document.getElementById("rs").textContent=D[i][3];
+  document.querySelectorAll(".chip").forEach(function(c){c.setAttribute("aria-pressed",c.dataset.i==i)});
+}
+document.querySelectorAll(".chip").forEach(function(c){c.addEventListener("click",function(){show(+c.dataset.i)})});
+show(0);
+var PHOTO="data:image/jpeg;base64,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";
+if(PHOTO){var av=document.querySelector(".av");av.textContent="";var im=new Image();im.src=PHOTO;im.alt="Ajay Ghosh";av.appendChild(im)}
+var rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+function count(el){var t=+el.dataset.n;if(rm)return;var s=null;function f(ts){if(!s)s=ts;var p=Math.min((ts-s)/1200,1);el.textContent=Math.round(t*(1-Math.pow(1-p,3))).toLocaleString("en-US");if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+var els=document.querySelectorAll("section h2,.sub,.card,.who div,.steps li,.pk,.bn,.art,.cta");
+els.forEach(function(e,i){e.classList.add("rv");e.style.setProperty("--d",(i%4)*0.09+"s")});
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){var e=x.target;e.classList.add("in");e.querySelectorAll(".num").forEach(count);setTimeout(function(){e.style.setProperty("--d","0s")},1400);io.unobserve(e)}})},{threshold:.15});els.forEach(function(e){io.observe(e)})}else{els.forEach(function(e){e.classList.add("in")})}
+if(WHATSAPP){document.querySelectorAll("[data-wa]").forEach(function(a){a.href="https://wa.me/"+WHATSAPP;a.target="_blank";a.rel="noopener"})}
+if(EMAIL){document.querySelectorAll("[data-em]").forEach(function(a){a.href="mailto:"+EMAIL})}
+var P={};
+function add(k,t,s,d,w,r,f){P[k]={t:t,s:s,d:d,w:w,r:r,f:f}}
+var G=[
+[`on-page-seo`,`On-Page SEO`,`Make every page easy to find, read and trust.`,`On-page SEO is everything done inside your website that helps search engines and visitors understand each page.`,[`Keyword mapping for every page`,`Title tags, meta descriptions and headings`,`Content improvement and internal linking`,`Image SEO, alt text and page speed basics`,`Schema markup and clean URL structure`],`Pages that rank for the right searches and turn visitors into calls and enquiries.`,[[`How long does on-page SEO take to show results?`,`Most pages start moving in 6 to 12 weeks, depending on competition and site age.`],[`Do you work on WordPress sites?`,`Yes. I optimize WordPress sites, including themes, plugins and page builders.`]]],
+[`off-page-seo`,`Off-Page SEO`,`Build authority beyond your website.`,`Off-page SEO builds the trust signals that tell Google your business is credible: links, mentions and profiles across the web.`,[`Quality backlink building on relevant sites`,`Local citations and directory listings`,`Brand mentions and guest content`,`Profile and entity consistency across platforms`,`Backlink audit and toxic link cleanup`],`Stronger authority and better rankings for competitive keywords.`,[[`Do you buy links?`,`No. I build links through relevant, genuine placements that keep your site safe.`],[`How do you track progress?`,`A monthly report shows new links, ranking changes and traffic.`]]],
+[`local-seo`,`Local SEO`,`Be the first choice in your area.`,`Local SEO helps you appear in Google Maps and local searches like “near me”.`,[`Google Business Profile setup and optimization`,`Local keyword research`,`Citations with consistent name, address and phone`,`Review strategy and replies`,`Local landing pages and weekly GBP posts`],`More calls, direction requests and visits from people nearby.`,[[`Is Local SEO only for physical locations?`,`It works best for businesses with a location or a defined service area.`],[`How soon will I appear on Maps?`,`Changes can show in weeks, and strong rankings build over a few months.`]]],
+[`ai-seo`,`AI SEO`,`Get found where people now search with AI.`,`AI SEO prepares your brand to appear in Google AI Overviews, ChatGPT, Gemini and Perplexity answers.`,[`AI visibility audit across major platforms`,`Entity and brand consistency across the web`,`Structured content and schema for machine reading`,`Authoritative, quotable content creation`,`Tracking brand mentions in AI answers`],`Your name gets recommended when people ask AI for a professional like you.`,[[`Is AI SEO different from normal SEO?`,`It builds on SEO but focuses on being cited and recommended inside AI-generated answers.`],[`Can you guarantee a mention in ChatGPT?`,`No one can. I strengthen the signals that make a mention more likely.`]]],
+[`aeo`,`AEO (Answer Engine Optimization)`,`Be the direct answer.`,`AEO structures your content so search engines show your answer in featured snippets, voice search and AI answers.`,[`Question research from real searches`,`Clear answer-first content blocks`,`FAQ and HowTo schema`,`Featured snippet and People Also Ask targeting`,`Voice-search friendly phrasing in Bangla and English`],`More visibility at the top of results and more trust before the click.`,[[`What is the difference between SEO and AEO?`,`SEO helps you rank in the list. AEO helps you become the answer shown above it.`],[`Does AEO work in Bangla?`,`Yes. I write answer-ready content in both Bangla and English.`]]],
+[`geo`,`GEO (Generative Engine Optimization)`,`Be cited by generative AI.`,`GEO shapes your content and authority so engines like ChatGPT, Gemini and Perplexity cite you as a source.`,[`Source-worthy content with clear facts and expertise`,`Author and brand authority signals`,`Mentions on trusted platforms`,`Content formatted for easy AI extraction`,`Monitoring which prompts mention you`],`Your expertise becomes a trusted source inside AI-generated answers.`,[[`How is GEO different from AEO?`,`AEO targets direct answers in search. GEO targets citations inside generative AI responses.`],[`Is GEO right for a small practice?`,`Yes. Specialist and local expertise is exactly what generative engines look for.`]]],
+[`full-seo-service`,`Full SEO Service`,`Everything in one complete SEO plan.`,`One plan that combines technical, on-page, off-page, local, AEO and AI search work under a single strategy.`,[`Complete SEO audit and roadmap`,`Technical fixes and on-page optimization`,`Content plan in Bangla and English`,`Off-page authority building`,`Local SEO, AEO and AI search optimization`,`Monthly report and strategy call`],`One accountable partner for all your search growth.`,[[`Which package covers Full SEO?`,`Growth and Authority cover it. Authority is the most complete.`],[`Do I get reports?`,`Yes, a monthly report, with weekly reports on the Authority plan.`]]]
+];
+G.forEach(function(g){add.apply(null,g)});
+[[`doctors`,`Doctors`,`best orthopedic surgeon near me`,`Patients search on Google and AI before they book, so an unclear profile loses appointments.`,[`Google Business Profile for chambers and clinics`,`Review collection and reputation care`,`Condition and treatment pages written with care`,`Doctor profile and appointment schema`]],
+[`engineers`,`Engineers`,`structural engineering consultant near me`,`Clients and contractors search for proven specialists before they ever call.`,[`Service and project pages for each specialty`,`Portfolio and case study content`,`Google Business Profile for your firm`,`B2B and tender keyword targeting`]],
+[`advocates`,`Advocates`,`property dispute lawyer near me`,`People in legal trouble search urgently and choose the lawyer who looks most trusted.`,[`Practice area pages for each case type`,`Google Business Profile for your chamber`,`Legal FAQ content in simple Bangla and English`,`Reviews and trust signals handled professionally`]]].forEach(function(a){var n=a[1],l=n.toLowerCase();
+add(`seo-for-`+a[0],`SEO for `+n,`Be the first name your clients find.`,`A complete search plan for `+l+`: local rankings, a trusted website and content that answers real client questions.`,a[4].concat([`Local SEO and on-page optimization`,`Monthly report with clear next steps`]),`More calls and enquiries from people searching for “`+a[2]+`” and similar terms.`,[[`Why do `+l+` need SEO?`,a[3]],[`Can you deliver in Bangla?`,`Yes. Content can be delivered in Bangla, English or both.`]]);
+add(`ai-seo-for-`+a[0],`AI SEO for `+n,`Be the name AI recommends.`,`Get recommended when people ask ChatGPT, Gemini or Google AI to find `+l+`.`,[`AI visibility audit for your name and brand`,`Entity profile and schema for your profession`,`Answer-ready FAQs for your top client questions`,`Authority content and trusted mentions`,`Monthly tracking of AI mentions`],`Your name appears when clients ask AI for the best option in your field.`,[[`Is AI SEO different from SEO for `+l+`?`,`It builds on SEO but focuses on being cited and recommended inside AI answers.`],[`Can you guarantee a mention?`,`No one can. I strengthen the signals that make a mention more likely.`]])});
+var home=document.getElementById('top'),svc=document.getElementById('svc'),T0=document.title;
+document.getElementById('plinks').innerHTML=Object.keys(P).map(function(k){return `<a href='#${k}'>${P[k].t}</a>`}).join('');
+function li(x){return `<li>${x}</li>`}
+function render(p){
+var wa=WHATSAPP?`https://wa.me/${WHATSAPP}`:`#contact`;
+var more=Object.keys(P).filter(function(k){return P[k]!==p}).map(function(k){return `<a href='#${k}'>${P[k].t}</a>`}).join('');
+svc.innerHTML=`<div class='pg'><a class='crumb' href='#pages'>← All services</a><h1 style='margin:14px 0 10px'>${p.t}</h1><p class='lead' style='font-size:1.25rem;color:var(--ink);margin-bottom:8px'>${p.s}</p><p class='lead'>${p.d}</p><div class='two'><div class='card'><h3>What I do</h3><ul class='tick'>${p.w.map(li).join('')}</ul></div><div class='card'><h3>What you get</h3><p>${p.r}</p><p style='margin:14px 0 18px'><a href='#packages'>See packages and prices</a></p><a class='btn' href='${wa}' target='_blank' rel='noopener'>Message on WhatsApp</a></div></div><div><h2 style='margin:44px 0 14px'>Common questions</h2>${p.f.map(function(q){return `<details><summary>${q[0]}</summary><p>${q[1]}</p></details>`}).join('')}</div><div><h2 style='margin:44px 0 14px'>More services</h2><div class='plinks'>${more}</div></div></div>`}
+function route(){var h=location.hash.slice(1),p=P[h];
+if(p){home.hidden=true;svc.hidden=false;render(p);window.scrollTo(0,0);document.title=p.t+' | Ajay Ghosh'}
+else{svc.hidden=true;home.hidden=false;document.title=T0;var e=h&&document.getElementById(h);if(e){e.scrollIntoView()}else{window.scrollTo(0,0)}}}
+window.addEventListener('hashchange',route);route();
+</script>
+</body>
+</html>
